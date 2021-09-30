@@ -1,0 +1,49 @@
+@import "vars"
+  
+body
+  margin: 0px
+
+  background-color: #EEF2F4
+
+  height: 100%
+  font-family: 'Source Sans Pro', sans-serif
+  color: $black
+
+h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+ul
+  margin: 0
+  padding: 0
+  list-style: none
+
+a
+  text-decoration: none
+  color: inherit
+
+  &:hover
+    text-decoration: underline
+
+*,
+*:after,
+*:before
+  box-sizing: border-box
+
+
+// Blocks
+@import "blocks/main"
+@import "blocks/container"
+@import "blocks/card"
+@import "blocks/preview"
+@import "blocks/slider"
+@import "blocks/about"
+@import "blocks/btn"
+@import "blocks/user"
+@import "blocks/stats"
+@import "blocks/social"
+@import "blocks/timer"
+@import "blocks/form"
+
+// 
+@import "media"

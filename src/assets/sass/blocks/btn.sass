@@ -1,0 +1,108 @@
+.btn
+  width: 100%
+  padding: 11px
+  font-family: inherit
+  font-size: 16px
+  font-weight: 600
+  color: #fff
+  border: none
+  border-radius: 6px
+  cursor: pointer
+  
+  &--red
+    margin-bottom: 24px
+    background-color: #E11E3E
+    box-shadow: 0px 2px 6px rgba(223, 51, 27, 0.4)
+    transition: background-color .2s linear
+
+    &:hover
+      background-color: darken(#E11E3E, 5%)
+
+  &--like
+    margin-left: 20px
+    padding: 0
+    width: 64px
+    height: 42px
+    display: block
+    background-color: transparent
+    background: url(../img/fav-btn.svg) no-repeat center
+    border: 2px solid #C4CDDF
+    border-radius: 6px
+    cursor: pointer
+    transition: background .1s linear, border-color .1s linear
+
+    &.selected
+      background: url(../img/fav-btn-hover.svg) no-repeat center
+      border-color: #E11E3E
+
+  &--video
+    margin-bottom: 24px
+    padding: 16px 32px 16px 70px
+    line-height: 10px
+    background: url(../img/icons/videocall.svg) no-repeat center left 32px
+    background-color: #4A80AA
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25)
+
+    &:hover
+      background-color: darken(#4A80AA, 5%)
+
+  &--complaint
+    padding: 6px
+    padding-left: 34px
+    max-width: 135px
+
+    background: url(../img/icons/complaint.svg) no-repeat center left 12px
+    border: 1px solid #C4CDDF
+
+    font-size: 14px
+    font-weight: 400
+    line-height: 20px
+    color: #767D86
+
+    &:hover
+      background-color: lighten(#C4CDDF, 15%)
+
+    img
+      margin-right: 2px
+
+  &--autobid
+    background-color: transparent
+    border: 2px solid #E11E3E
+    color: #E11E3E
+    box-shadow: none
+
+    &:hover
+      background-color: lighten(#E11E3E, 45%)
+
+  &--user
+    padding: 0
+    display: block
+    width: 100%
+    height: 40px
+    border: none
+    cursor: pointer
+    transition: background .1s linear
+
+    &--follow
+      background: url(../img/user/follow.svg) no-repeat center
+  
+      &:hover
+        background: url(../img/user/follow-hover.svg) no-repeat center
+
+      &.selected
+        background: url(../img/user/follow-selected.svg) no-repeat center
+
+    &--fav
+      background: url(../img/user/fav.svg) no-repeat center
+  
+      &:hover
+        background: url(../img/user/fav-hover.svg) no-repeat center
+
+      &.selected
+        background: url(../img/user/fav-selected.svg) no-repeat center
+
+    &--connect
+      background: url(../img/user/connect.svg) no-repeat center
+  
+      &:hover
+        background: url(../img/user/connect-hover.svg) no-repeat center

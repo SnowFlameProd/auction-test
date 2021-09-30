@@ -1,0 +1,63 @@
+.stats
+  margin-bottom: 24px
+  display: flex
+  flex-direction: column
+
+  &__items
+    margin-bottom: 16px
+    display: flex
+  
+  &__item
+    display: flex
+    align-items: center
+
+    &:not(:last-child)
+      margin-right: 16px
+
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 25px
+    height: 25px
+    background-color: #fff
+    border-radius: 50%
+
+  &__text
+    padding-left: 4px
+    font-size: 14px
+    font-weight: 400
+
+  &__data
+    display: flex
+
+    &-item
+      display: flex
+
+      &:not(:last-child)
+        margin-right: 16px
+
+      &--bet
+        font-size: 14px
+        font-weight: 600
+        color: #408AC9
+
+      &--open
+        padding-left: 20px
+        font-size: 13px
+        font-weight: 400
+        color: #7CC076
+        position: relative
+
+        &::before
+          position: absolute
+          content: ''
+          width: 9px
+          height: 9px
+          background-color: #7CC076
+          border-radius: 50%
+          left: 3.59px
+          top: 3.59px
+    
+    &-icon
+      margin-right: 4px
